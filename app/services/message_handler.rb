@@ -11,9 +11,7 @@ class MessageHandler
     case @trigger_word
     when ENV['MEME_TRIGGER_WORD']
       MemeHandler.new(@message).process!
-    when ENV['GAME_TRIGGER_WORD']
-      GameHandler.new(@user_name, @message).process!
     end
   end
-  
+
 end

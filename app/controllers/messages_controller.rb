@@ -15,7 +15,7 @@ class MessagesController < ApplicationController
 private
 
   def valid_trigger_word?
-    unless [ENV['MEME_TRIGGER_WORD'], ENV['GAME_TRIGGER_WORD']].include?(params[:trigger_word])
+    unless [ENV['MEME_TRIGGER_WORD']].include?(params[:trigger_word])
       render json: {error: 'invalid trigger_word'}.to_json
       return
     end

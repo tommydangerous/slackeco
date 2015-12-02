@@ -29,7 +29,4 @@ describe MessagesController, type: :controller do
     end
   end # describe "memes" do
 
-  describe "games" do
-  end # describe "games" do
-
 end
